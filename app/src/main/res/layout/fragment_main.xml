@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/networkConnectionMsg_container"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView_postersGrid"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:numColumns="auto_fit"
+        android:columnWidth="200dp"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp" />
+
+</LinearLayout>

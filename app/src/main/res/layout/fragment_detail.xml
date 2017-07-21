@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top movie title bar -->
+        <LinearLayout
+            android:background="@color/darkGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieDetail_title"
+                android:textSize="54dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Movie info bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="6dp">
+
+            <!-- Left (image) area -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/movieDetail_thumb" />
+            </LinearLayout>
+
+            <!-- Right (info) area -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movieDetail_releaseDate"
+                    android:textSize="30dp"
+                    android:textColor="@color/lightGrey"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movieDetail_runtime"
+                    android:textSize="22dp"
+                    android:text="121min"
+                    android:textStyle="italic"
+                    android:textColor="@color/darkGrey"
+                    android:layout_marginBottom="16dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/movieDetail_rating"
+                    android:textSize="14dp"
+                    android:textColor="@color/darkGrey"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/markAsFavorite_button"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:elevation="0dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/mark_as_favorite"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Review and trailers area -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:divider="@drawable/divider"
+            android:showDividers="middle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieDetail_overview"
+                android:textSize="16dp"
+                android:textColor="@color/lightGrey"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:id="@+id/video_slots_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:id="@+id/review_slots_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+

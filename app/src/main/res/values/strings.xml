@@ -1,0 +1,30 @@
+<resources>
+    <!-- Log tags -->
+
+    <string name="app_name">Popular Movies Browser</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="settings_sortBy_key">sortBy</string>
+    <string name="settings_popularity">Most popular</string>
+
+    <!--Settings > Sort by-->
+    <string-array name="settings_sortBy_entries">
+        <item>Most popular</item>
+        <item>Highest rating</item>
+        <item>Favorites</item>
+    </string-array>
+    <string-array name="settings_sortBy_entryValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="mark_as_favorite">Mark as favorite</string>
+    <string name="trailers">Trailers:</string>
+    <string name="user_reviews">User reviews::</string>
+    <string name="review_by">A movie review by ::</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="retry">Retry</string>
+    <string name="no_network_connection">No internet connection!</string>
+    <string name="share_video">Share video</string>
+
+</resources>
